@@ -1,0 +1,72 @@
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: $base-padding $base-padding * 5;
+    background: $color-white;
+    z-index: 99;
+    overflow: hidden;
+    
+    @include smaWidth {
+        padding: $base-padding;
+    }
+    
+    .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    
+        .logo h3 {
+            font-size: 1.2rem;
+            font-weight: $font-bold-wgt;
+            text-transform: uppercase;
+            user-select: none;
+            color: $color-dark;
+
+            span {
+                color: var(--color-primary);
+            }
+        }
+
+        .search-bar {
+            padding: $search-padding;
+            background: $color-light;
+            border-radius: $border-radius;
+
+            @include medWidth {
+                display: none;
+            }
+
+            input[type="search"] {
+                background: transparent;
+                width: 30vw;
+                margin-left: $base-margin;
+                font-size: $sm-font-size;
+                color: $color-dark;
+
+                &::placeholder {
+                    color: $color-gray;
+                }
+            }
+        }
+
+        .add-post {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            
+            @include smaWidth {
+                gap: .8rem;
+            }
+
+            .header-profile {
+                width: 2.2rem;
+            }
+            .header-btn {
+                transform: scale(.8);
+            }
+        }
+    }
+}
+

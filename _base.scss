@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body {
+    font-family: ''Segoe UI', Tahoma, Geneva, Verdana, sans-serif';
+    color: $color-dark;
+    background: $color-light;  
+}
+img {
+    width: 100%;
+    display: block;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+    @include maxWidth {
+        width: 96%;
+    }
+}
+.text-bold {
+    font-weight: $font-semi-bold-wgt;
+}
+.text-gray {
+    color: $color-gray;
+}
+/****************** Button Stying ********************/
+.btn {
+    padding: $btn-padding;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: $border-radius;
+    font-size: $sm-font-size;
+    font-weight: $font-semi-bold-wgt;
+    transition: 300ms ease all;
+    
+    &:hover {
+        opacity: $opacity;
+    }
+    &.btn-primary {
+        background: var(--color-primary);
+        color: $color-white;
+    }    
+}
+/****************** Main Stying ********************/
+main {
+    position: relative;
+    top: 4rem;
+}
+/******************** Button Large *******************/
+.btn-lg {
+    padding: $base-padding * 1.3 0;
+    width: 100%;
+    text-align: center;
+    margin-top: $base-margin;
+}
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    @include medWidth {
+        display: block;
+        width: 100%;
+    }
+}
+/****************** Profile Picture Stying ********************/
+.profile-picture {
+    width: 3rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &:hover {
+        opacity: $opacity;
+    }
+}
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+%d-flex-ai {
+    display: flex;
+    align-items: center;
+}
+@mixin d-flex($js-content: center) {
+    display: flex;
+    align-items: center;
+    justify-content: $js-content;
+}
+@mixin d-flex-fd {
+    @include d-flex;
+    flex-direction: column;
+}
+@mixin choose {
+    @include d-flex(space-between);
+    margin: $base-margin 0;
+    padding: $search-padding;
+    border-radius: $card-border-radius;
+    background: $color-light;
+}

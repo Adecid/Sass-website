@@ -1,0 +1,133 @@
+.main-right {   
+    flex-basis: 20vw; 
+    width: 100%;
+    height: max-content;
+    position: sticky;
+    top: -18rem;
+    right: 0;
+    
+    @include medWidth {
+        display: none;
+    }
+
+    .messages {
+        background: $color-white;
+        border-radius: $card-border-radius;
+        padding: $card-padding;
+
+        .message-top {
+            @include d-flex(space-between);
+            margin-bottom: $base-margin;
+
+            h4 {
+                i {
+                    font-size: $md-font-size * 1.16;
+                }
+            }
+        }
+        .message-search-bar {
+            display: flex;
+            background: $color-light;
+            border-radius: $border-radius;
+            padding: calc($card-padding / 1.2);
+            gap: .5rem;
+
+            input[type=search] {
+                background: transparent;
+                font-size: $nml-font-size;
+                color: $color-dark;
+            }
+        }
+        .message-categories {
+            @include d-flex(space-between);
+            margin-bottom: $base-margin;
+
+            h6 {
+                font-weight: $font-semi-bold-wgt;
+                width: 100%;
+                font-size: .85rem;
+                padding-bottom: .5rem;
+                border-bottom: 4px solid $color-light;
+                text-align: center;
+                margin-top: $base-margin;
+            }
+            .active {
+                border-color: var(--color-primary);
+            }
+            .message-request {
+                color: var(--color-primary);
+            }
+        }
+        .message {
+            @extend %d-flex-ai;
+            gap: 1rem;
+            margin-bottom: $base-margin;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+           
+            .profile-picture {
+                position: relative;
+                overflow: visible;
+                height: 2.6rem;
+                width: 2.6rem;
+
+                img {
+                    border-radius: 50%;
+                }
+
+                .green-active {
+                    position: absolute;
+                    width: .8rem;
+                    height: .8rem;
+                    background: $color-success;
+                    border-radius: 50%;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+            .message-body {
+                p {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+    /************** Friend Request **************/
+    .friend-request {
+        margin-top: $base-margin;
+
+        h4 {
+            color: $color-gray;
+            margin: $base-margin 0;
+        }
+        .request {
+            background: $color-white;
+            padding: $card-padding;
+            border-radius: $card-border-radius;
+            margin-bottom: $base-margin;
+            
+            .info {
+                display: flex;
+                align-items: flex-start;
+                gap: 1rem;
+                margin-bottom: $base-margin;
+
+                .alert {
+                    display: none;
+                    font-size: .7rem;
+                }
+            }
+            .action {
+                display: flex;
+                gap: 1rem;
+
+                .btn-danger {
+                    background: $color-danger;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}

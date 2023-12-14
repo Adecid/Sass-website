@@ -1,0 +1,247 @@
+.main-middle {
+    flex-basis: auto;
+    .middle-container {
+        max-width: 700px;
+        width: 90%;
+        margin: 0 auto;
+        
+        @include smaWidth {
+            width: 100%;
+        }
+
+        .stories {
+            .stories-wrapper {
+                display: flex;
+                gap: .5rem;
+                height: 12rem !important;
+                max-width: 100%;
+                
+                @include smaWidth {
+                    max-width: 760px;
+                }
+                .story {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    border-radius: $card-border-radius;
+                    overflow: hidden;
+
+                    input[type=file] {
+                        display: none;
+                    }
+    
+                    &::before {
+                        height: 5rem;
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        bottom: 0;
+                        background: linear-gradient(transparent, var(--color-primary));
+                        width: 100%;
+                    }
+    
+                    &:first-child {
+                        background: var(--color-primary);
+                    }
+    
+                    .profile-picture {
+                        position: absolute;
+                        top: .6rem;
+                        left: 0.2rem;
+                        width: 2.4rem;
+                        border: 2px dashed var(--color-primary);
+                        z-index: 8;
+                    }
+
+                    p {
+                        text-align: center;
+                        margin-top: -3rem;
+                        color: $color-white;
+                        z-index: 8;
+                        position: absolute;
+                        width: 100%;
+                    }
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    .add-story {
+                        @include d-flex-fd;
+                        width: 100%;
+                        height: 100%;
+                        background: var(--color-primary);
+                        top: 0;
+                        position: absolute;
+                        text-align: center;
+    
+                        i {
+                            display: block;
+                            margin-bottom: 2rem;
+                            font-size: $md-font-size * 1.18;
+                            margin-top: $base-margin * 4;
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+        .add-post {
+            @include d-flex(space-between);
+            padding: $base-padding * 0.52 $card-padding;
+            border-radius: $border-radius;
+            background: $color-white;
+            margin-top: 1rem;
+    
+            .profile-picture {
+                width: 2.8rem;
+            }
+    
+            input[type="text"] {
+                justify-self: flex-start;
+                width: 100%;
+                padding-left: $card-padding;
+                background: transparent;
+                color: $color-dark;
+                margin-right: $base-margin;
+            }
+        }
+        /****************** Feeds Area *******************/
+        .feeds {
+            .feed {
+                background: $color-white;
+                padding: $card-padding;
+                border-radius: $card-border-radius;
+                margin: 1rem auto;
+                line-height: 1.5;
+                font-size: .85rem;
+                
+                .feed-top {
+                    @include d-flex(space-between);
+                    /*position: relative;*/
+
+                    .user {
+                        display: flex;
+                        gap: 1rem;
+                    }
+                    .edit {
+                        i {
+                            font-size: 1.6rem;
+                        }
+                        .edit-menu {
+                            background: $color-white;
+                            padding: $card-padding;
+                            border-radius: $card-border-radius;
+                            display: flex;
+                            flex-direction: column;
+                            gap: .5rem;
+                            position: absolute;
+                            right: 0;
+                            box-shadow: 0 0 .2rem var(--color-primary);
+                            transform: scale(0);
+                            transition: all .40s ease;
+                            transform-origin: top right;
+
+                            li {
+                                @extend %d-flex-ai;
+                                gap: 1rem;
+                                font-size: 1rem;
+                                color: $color-gray;
+                                transition: all .40s ease;
+
+                                &:hover {
+                                    color: $color-dark;
+                                }
+                                &:last-child {
+                                    &:hover {
+                                        color: $color-danger;
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                            .edit-menu {
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+                .feed-img {
+                    border-radius: $card-border-radius;
+                    overflow: hidden;
+                    margin: .8rem 0;
+                }
+                .action-button {
+                    @include d-flex(space-between);
+                    font-size: 1.4rem;
+                    margin: 0.6rem;
+
+                    span {
+                        &:first-child {
+                            i {
+                                font-weight: normal;
+                            }
+                        }
+                        &:nth-child(2) {
+                            i {
+                                font-weight: normal;
+                            }
+                        }
+                    }
+                    .bookmark {
+                        i {
+                            font-weight: normal;
+                        }
+                    }
+                }
+                .liked-by {
+                    display: flex;
+                    
+                    span {
+                        border-radius: 50%;
+                        display: block;
+                        height: 1.4rem;
+                        width: 1.4rem;
+                        overflow: hidden;
+                        margin-left: -.6rem;
+                        border: 2px solid $color-white;
+
+                        /**** should remove ****/
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                        &:first-child {
+                            margin: 0;
+                        }
+                    }
+                    p {
+                        margin-left: .5rem;
+                    }
+                }
+                .harsh-tag {
+                    color: var(--color-primary);
+                }
+                .caption {
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+            .myfeed {
+                .feed-top {
+                    .edit {
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+}
+.box-shadow1 {
+    box-shadow: 0 0 .5rem var(--color-primary);
+}
+.liked {
+    font-weight: $font-semi-bold-wgt;
+    color: $color-danger !important;
+    transform: scale(1);
+}

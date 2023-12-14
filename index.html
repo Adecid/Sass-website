@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Social Book) Responsive social media website</title>
+
+    <!-------------------- Custom CSS Link --------------------->
+    <link rel="stylesheet" href="style.css">
+    <!-------------------- Font Awesome icon Link --------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-------------------- Boxicon link --------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-------------------- Swiper CSS Link --------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <!-------------------- Navbar Section --------------------->
+    <nav>
+        <div class="nav-container container">
+            <div class="logo">
+                <h3>Social <span>Book</span></h3>
+            </div>
+            <div class="search-bar">
+                <i class="fa fa-search"></i>
+                <input type="search" placeholder="Search For Creators">
+            </div>
+            <div class="add-post">
+                <label for="add-post" class="btn btn-primary mini-button header-btn">Add Post</label>
+                <div class="profile-picture header-profile" id="my-profile-picture">
+                    <img src="./assets/image/profile.png" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-------------------- Main Section --------------------->
+    <main>
+        <div class="main-container container">
+            <!-------------------- Main Left Section --------------------->
+            <div class="main-left">
+                <!-------------------- Profile --------------------->
+                <a class="profile">
+                    <div class="profile-picture" id="my-profile-picture">
+                        <img src="./assets/image/profile.png" alt="">
+                    </div>
+                    <div class="profile-handle">
+                        <h4>Micheal David</h4>
+                        <p class="text-gray">
+                            @mickydave
+                        </p>
+                    </div>
+                </a>
+                <!-------------------- Aside Bar --------------------->
+                <aside>
+                    <a href="#" class="menu-item active">
+                        <span><img src="./assets/image/icon1.png" alt=""></span> <h3>Home</h3>
+                    </a>
+                    
+                    <a href="#" class="menu-item">
+                        <span><img src="./assets/image/icon2.png" alt=""></span> <h3>Explore</h3>
+                    </a>
+                    
+                    <a href="#" class="menu-item">
+                        <span><img src="./assets/image/icon3.png" alt=""></span>
+                        <small class="notify-counter" id="nt-counter">7+</small>
+                        <h3>Notifiction</h3>
+                        <!-------------------- Notification Box --------------------->
+                        <div class="notification-box">
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./assets/image/n1.jpg" alt="">
+                                </div>
+                                <div class="notication-body">
+                                    <b>Maria Lily</b> accepted your friend request
+                                    <small class="text-gray">1 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./assets/image/n2.jpg" alt="">
+                                </div>
+                                <div class="notication-body">
+                                    <b>John Evan</b> commented on your profile picture
+                                    <small class="text-gray">2 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./assets/image/n3.jpg" alt="">
+                                </div>
+                                <div class="notication-body">
+                                    <b>Emily Benjamin</b> liked your on post
+                                    <small class="text-gray">JUST NOW</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./assets/image/n4.jpg" alt="">
+                                </div>
+                                <div class="notication-body">
+                                    <b>Mark Trump</b> and <b>10 others </b>liked your post
+                                    <small class="text-gray">TODAY</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="./assets/image/n5.jpg" alt="">
+                                </div>
+                                <div class="notication-body">
+                                    <b>Evranhim Alli</b> and <b>5 others </b>commented on your post
+                                    <small class="text-gray">3 DAYS AGO</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="menu-item">
+                        <span><img src="./assets/image/icon4.png" alt=""></span>
+                        <small class="notify-counter" id="message-menu">3</small>
+                        <h3>Message</h3>
+                    </a>
+
+                    <a href="#" class="menu-item">
+                        <span><img src="./assets/image/icon5.png" alt=""></span> <h3>Book Mark</h3>
+                    </a>
+                    
+                    <a href="#" class="menu-item">
+                        <span><img src="./assets/image/icon6.png" alt=""></span> <h3>Analytics</h3>
+                    </a>
+
+                    <a href="#" class="menu-item">
+                        <span><img src="./assets/image/icon7.png" alt=""></span> <h3>Theme</h3>
+                    </a>
+
+                    <a href="#" class="menu-item">
+                        <span><img src="./assets/image/icon8.png" alt=""></span> <h3>Settings</h3>
+                    </a>
+
+                    <!-------------------- Add post btn --------------------->
+                    <label for="add-post" class="btn btn-primary btn-lg" id="create-lg">Create A Post</label>
+                </aside>
+            </div>
+
+            <!-------------------- Main Middle --------------------->
+            <div class="main-middle">
+                <div class="middle-container">
+                    <!-------------------- Start Stories --------------------->
+                    <div class="stories">
+                        <div class="stories-wrapper swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="story swiper-slide">
+                                    <img src="" alt="">
+                                    <div class="profile-picture" id="my-profile-picture">
+                                        <img src="./assets/image/p2.jpg" alt="">
+                                    </div>
+                                    <label for="add-story" class="add-story">
+                                        <i class="fa fa-add" id="upload"></i>
+                                        <p>Add Your Story</p>
+                                    </label>
+                                    <input type="file" accept="image/jpg, image/png, image/jpeg" id="add-story">
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="./assets/image/s1.jpg" alt="">
+                                    <div class="profile-picture">
+                                        <img src="./assets/image/p1.jpg" alt="">
+                                    </div>
+                                    <p>Evrahim Alli</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="./assets/image/s2.jpg" alt="">
+                                    <div class="profile-picture">
+                                        <img src="./assets/image/p7.jpg" alt="">
+                                    </div>
+                                    <p>Luna White</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="./assets/image/s3.jpg" alt="">
+                                    <div class="profile-picture">
+                                        <img src="./assets/image/p4.jpg" alt="">
+                                    </div>
+                                    <p>Furkan Syal</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="./assets/image/s4.jpg" alt="">
+                                    <div class="profile-picture">
+                                        <img src="./assets/image/p8.jpg" alt="">
+                                    </div>
+                                    <p>Alixa Lisa</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="./assets/image/s5.jpg" alt="">
+                                    <div class="profile-picture">
+                                        <img src="./assets/image/p5.jpg" alt="">
+                                    </div>
+                                    <p>Anny Walker</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="./assets/image/s6.jpg" alt="">
+                                    <div class="profile-picture">
+                                        <img src="./assets/image/p3.jpg" alt="">
+                                    </div>
+                                    <p>William Jems</p>
+                                </div>
+                                <div class="story swiper-slide">
+                                    <img src="./assets/image/s7.jpg" alt="">
+                                    <div class="profile-picture">
+                                        <img src="./assets/image/p6.jpg" alt="">
+                                    </div>
+                                    <p>William Jems</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    
+                    <!-------------------- Post Input --------------------->
+                    <form class="add-post input-post">
+                        <div class="profile-picture" id="my-profile-picture">
+                            <img src="./assets/image/profile.png" alt="">
+                        </div>
+                        <input type="text" placeholder="What's On Your Mind ?" id="add-post">
+                        <input type="submit" value="Post" class="btn btn-primary">
+                    </form>
+                    <!-------------------- Feed Area --------------------->
+                    <div class="feeds">
+                     <div class="feed">
+                            <!-------------------- Feed Top ---------------------> 
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./assets/image/p1.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Jenny Emma</h3>
+                                        <div class="time text-gray">
+                                            <small>SOUTH AFRICA, <span>JUST NOW</span></small> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class='bx bx-dots-horizontal-rounded'></i>
+
+                                    <ul class="edit-menu">
+                                        <li><i class="fa fa-pen"></i>Edit</li>
+                                        <li><i class="fa fa-trash"></i>Delete</li>
+                                    </ul>
+                                </span>
+                            </div>
+                            <!-------------------- Feed img ---------------------> 
+                            <div class="feed-img">
+                                <img src="./assets/image/f1.jpg" alt="">
+                            </div>
+                            <!-------------------- Feed Action Area ---------------------> 
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa fa-heart"></i></span>
+                                    <span><i class="fa fa-comment-dots"></i></span>
+                                    <span><i class="fa fa-link"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <i class="fa fa-bookmark"></i>
+                                </div>
+                            </div>
+
+                            <!-------------------- LIked By ---------------------> 
+                            <div class="liked-by">
+                                <span><img src="./assets/image/f1.jpg" alt=""></span>
+                                <span><img src="./assets/image/f3.jpg" alt=""></span>
+                                <p>liked by <b>Rose Favor</b> and <b>1 other comments</b> </p>
+                            </div>
+                            
+                            <!-------------------- Caption ---------------------> 
+                            <div class="caption">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem odit sint vitae ullam.
+                                </div>
+                                <p><b>Maria Mim </b>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                <span class="harsh-tag">#lifestyle</span></p>
+                            </div>
+
+                            <!-------------------- Comments ---------------------> 
+                            <div class="comments text-gray">
+                                View all comments
+                            </div>
+                     </div>
+                     <div class="feed">
+                            <!-------------------- Feed Top ---------------------> 
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./assets/image/f9.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Blessing Boss</h3>
+                                        <div class="time text-gray">
+                                            <small>NIGERIA, <span>2 DAYS AGO</span></small> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class='bx bx-dots-horizontal-rounded'></i>
+                                </span>
+                            </div>
+                            <!-------------------- Feed img ---------------------> 
+                            <div class="feed-img">
+                                <img src="./assets/image/f2.jpg" alt="">
+                            </div>
+                            <!-------------------- Feed Action Area ---------------------> 
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa fa-heart"></i></span>
+                                    <span><i class="fa fa-comment-dots"></i></span>
+                                    <span><i class="fa fa-link"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <i class="fa fa-bookmark"></i>
+                                </div>
+                            </div>
+
+                            <!-------------------- LIked By ---------------------> 
+                            <div class="liked-by">
+                                <span><img src="./assets/image/p4.jpg" alt=""></span>
+                                <span><img src="./assets/image/p5.jpg" alt=""></span>
+                                <span><img src="./assets/image/p6.jpg" alt=""></span>
+                                <p><b>John Willams</b> and <b>77 others comments</b> </p>
+                            </div>
+                            
+                            <!-------------------- Caption ---------------------> 
+                            <div class="caption">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem odit sint vitae ullam. Illum obcaecati libero fugit dolores inventore quaerat!
+                                </div>
+                                <p><b>Luna White</b>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                <span class="harsh-tag">#lifestyle</p>
+                            </div>
+
+                            <!-------------------- Comments ---------------------> 
+                            <div class="comments text-gray">
+                                View all comments
+                            </div>
+                     </div>
+                     <div class="feed">
+                            <!-------------------- Feed Top ---------------------> 
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./assets/image/p3.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Mike Confidence</h3>
+                                        <div class="time text-gray">
+                                            <small>NIGERIA, <span>2 DAYS AGO</span></small> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class='bx bx-dots-horizontal-rounded'></i>
+                                </span>
+                            </div>
+                            <!-------------------- Feed img ---------------------> 
+                            <div class="feed-img">
+                                <div class="title">
+                                    <h2>Hello World, i'm Mike <br>
+                                    from Nigeria</h2>
+                                </div>
+                            </div>
+                            <!-------------------- Feed Action Area ---------------------> 
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa fa-heart"></i></span>
+                                    <span><i class="fa fa-comment-dots"></i></span>
+                                    <span><i class="fa fa-link"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <i class="fa fa-bookmark"></i>
+                                </div>
+                            </div>
+
+                            <!-------------------- LIked By ---------------------> 
+                            <div class="liked-by">
+                                <span><img src="./assets/image/p4.jpg" alt=""></span>
+                                <span><img src="./assets/image/p5.jpg" alt=""></span>
+                                <span><img src="./assets/image/p6.jpg" alt=""></span>
+                                <p>Liked by <b>Yeang Hoo</b> and <b>23 others comments</b> </p>
+                            </div>
+                            
+                            <!-------------------- Caption --------------------->
+                            <div class="caption">
+                                <p><b>Luna White </b>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                <span class="harsh-tag">#lifestyle</p>
+                            </div> 
+
+                            <!-------------------- Comments ---------------------> 
+                            <div class="comments text-gray">
+                                View all comments
+                            </div>
+                     </div>
+                     <div class="feed">
+                            <!-------------------- Feed Top ---------------------> 
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./assets/image/p4.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Glira Ema</h3>
+                                        <div class="time text-gray">
+                                            <small>RUSIA, <span>1 HOUR AGO</span></small> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class='bx bx-dots-horizontal-rounded'></i>
+                                </span>
+                            </div>
+                            <!-------------------- Feed img ---------------------> 
+                            <div class="feed-img">
+                                <img src="./assets/image/f3.jpg" alt="">
+                            </div>
+                            <!-------------------- Feed Action Area ---------------------> 
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa fa-heart"></i></span>
+                                    <span><i class="fa fa-comment-dots"></i></span>
+                                    <span><i class="fa fa-link"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <i class="fa fa-bookmark"></i>
+                                </div>
+                            </div>
+
+                            <!-------------------- LIked By ---------------------> 
+                            <div class="liked-by">
+                                <span><img src="./assets/image/p4.jpg" alt=""></span>
+                                <span><img src="./assets/image/p5.jpg" alt=""></span>
+                                <span><img src="./assets/image/p6.jpg" alt=""></span>
+                                <p>Liked by<b>David Mark</b> and <b>77 others comments</b> </p>
+                            </div>
+                            
+                            <!-------------------- Caption ---------------------> 
+                            <div class="caption">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem odit sint vitae ullam.
+                                </div>
+                                <p><b>Jia Glisa </b>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                <span class="harsh-tag">#lifestyle</p>
+                            </div>
+
+                            <!-------------------- Comments ---------------------> 
+                            <div class="comments text-gray">
+                                View all comments
+                            </div>
+                     </div>
+                     <div class="feed">
+                            <!-------------------- Feed Top ---------------------> 
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./assets/image/p5.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Emaliy Elfiey</h3>
+                                        <div class="time text-gray">
+                                            <small>LONDON, <span>3 DAYS AGO</span></small> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class='bx bx-dots-horizontal-rounded'></i>
+                                </span>
+                            </div>
+                            <!-------------------- Feed img ---------------------> 
+                            <div class="feed-img">
+                                <img src="./assets/image/f4.jpg" alt="">
+                            </div>
+                            <!-------------------- Feed Action Area ---------------------> 
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa fa-heart"></i></span>
+                                    <span><i class="fa fa-comment-dots"></i></span>
+                                    <span><i class="fa fa-link"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <i class="fa fa-bookmark"></i>
+                                </div>
+                            </div>
+
+                            <!-------------------- LIked By ---------------------> 
+                            <div class="liked-by">
+                                <span><img src="./assets/image/p4.jpg" alt=""></span>
+                                <span><img src="./assets/image/p5.jpg" alt=""></span>
+                                <span><img src="./assets/image/p6.jpg" alt=""></span>
+                                <p>Liked by<b>Maria Bron</b> and <b>77 others comments</b> </p>
+                            </div>
+                            
+                            <!-------------------- Caption ---------------------> 
+                            <div class="caption">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                </div>
+                                <p><b>Luna White</b>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                <span class="harsh-tag">#lifestyle</p>
+                            </div>
+
+                            <!-------------------- Comments ---------------------> 
+                            <div class="comments text-gray">
+                                View all comments
+                            </div>
+                     </div>
+                     <div class="feed myfeed">
+                            <!-------------------- Feed Top ---------------------> 
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture" id="my-profile-picture">
+                                        <img src="./assets/image/profile.png" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Micheal David</h3>
+                                        <div class="time text-gray">
+                                            <small>AUSTRALIA, <span>JUST NOW</span></small> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class='bx bx-dots-horizontal-rounded'></i>
+
+                                    <ul class="edit-menu">
+                                        <li><i class="fa fa-pen"></i>Edit</li>
+                                        <li><i class="fa fa-trash"></i>Delete</li>
+                                    </ul>
+                                </span>
+                            </div>
+                            <!-------------------- Feed img ---------------------> 
+                            <div class="feed-img">
+                                <img src="./assets/image/f5.jpg" alt="">
+                            </div>
+                            <!-------------------- Feed Action Area ---------------------> 
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa fa-heart"></i></span>
+                                    <span><i class="fa fa-comment-dots"></i></span>
+                                    <span><i class="fa fa-link"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <i class="fa fa-bookmark"></i>
+                                </div>
+                            </div>
+
+                            <!-------------------- LIked By ---------------------> 
+                            <div class="liked-by">
+                                <span><img src="./assets/image/p4.jpg" alt=""></span>
+                                <span><img src="./assets/image/p5.jpg" alt=""></span>
+                                <span><img src="./assets/image/p6.jpg" alt=""></span>
+                                <p>liked by <b>Rakib Hasan</b> and <b>1 other comments</b> </p>
+                            </div>
+                            
+                            <!-------------------- Caption ---------------------> 
+                            <div class="caption">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem odit sint vitae ullam.
+                                </div>
+                                <p><b>Maria Mim </b>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                <span class="harsh-tag">#lifestyle</span></p>
+                            </div>
+
+                            <!-------------------- Comments ---------------------> 
+                            <div class="comments text-gray">
+                                View all comments
+                            </div>
+                     </div>
+                     <div class="feed">
+                            <!-------------------- Feed Top ---------------------> 
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./assets/image/p6.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Pheobe Evans</h3>
+                                        <div class="time text-gray">
+                                            <small>New York, <span>2 DAYS AGO</span></small> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class='bx bx-dots-horizontal-rounded'></i>
+                                </span>
+                            </div>
+                            <!-------------------- Feed img ---------------------> 
+                            <div class="feed-img">
+                                <img src="./assets/image/f6.jpg" alt="">
+                            </div>
+                            <!-------------------- Feed Action Area ---------------------> 
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa fa-heart"></i></span>
+                                    <span><i class="fa fa-comment-dots"></i></span>
+                                    <span><i class="fa fa-link"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <i class="fa fa-bookmark"></i>
+                                </div>
+                            </div>
+
+                            <!-------------------- LIked By ---------------------> 
+                            <div class="liked-by">
+                                <span><img src="./assets/image/p4.jpg" alt=""></span>
+                                <span><img src="./assets/image/p5.jpg" alt=""></span>
+                                <span><img src="./assets/image/p6.jpg" alt=""></span>
+                                <p><b>John Willams</b> and <b>77 others comments</b> </p>
+                            </div>
+                            
+                            <!-------------------- Caption ---------------------> 
+                            <div class="caption">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem odit sint vitae ullam. Illum obcaecati libero fugit dolores inventore quaerat!
+                                </div>
+                                <p><b>Luna White</b>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                <span class="harsh-tag">#lifestyle</p>
+                            </div>
+
+                            <!-------------------- Comments ---------------------> 
+                            <div class="comments text-gray">
+                                View all comments
+                            </div>
+                     </div>
+                     <div class="feed">
+                            <!-------------------- Feed Top ---------------------> 
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./assets/image/p7.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Ali Musa</h3>
+                                        <div class="time text-gray">
+                                            <small>KENYA, <span>2 DAYS AGO</span></small> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class='bx bx-dots-horizontal-rounded'></i>
+                                </span>
+                            </div>
+                            <!-------------------- Feed img ---------------------> 
+                            <div class="feed-img">
+                                <div class="title">
+                                    <h2>Hello World, i'm Ali<br>
+                                    from Japan</h2>
+                                </div>
+                            </div>
+                            <!-------------------- Feed Action Area ---------------------> 
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa fa-heart"></i></span>
+                                    <span><i class="fa fa-comment-dots"></i></span>
+                                    <span><i class="fa fa-link"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <i class="fa fa-bookmark"></i>
+                                </div>
+                            </div>
+
+                            <!-------------------- LIked By ---------------------> 
+                            <div class="liked-by">
+                                <span><img src="./assets/image/p4.jpg" alt=""></span>
+                                <span><img src="./assets/image/p5.jpg" alt=""></span>
+                                <span><img src="./assets/image/p6.jpg" alt=""></span>
+                                <p>Liked by <b>Yeang Hoo</b> and <b>23 others comments</b> </p>
+                            </div>
+                            
+                            <!-------------------- Caption --------------------->
+                            <div class="caption">
+                                <p><b>Luna White </b>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                <span class="harsh-tag">#lifestyle</p>
+                            </div> 
+
+                            <!-------------------- Comments ---------------------> 
+                            <div class="comments text-gray">
+                                View all comments
+                            </div>
+                     </div>
+                     <div class="feed">
+                            <!-------------------- Feed Top ---------------------> 
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./assets/image/p8.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Scott Rymond</h3>
+                                        <div class="time text-gray">
+                                            <small>CANADA, <span>5 MINUTE AGO</span></small> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class='bx bx-dots-horizontal-rounded'></i>
+                                </span>
+                            </div>
+                            <!-------------------- Feed img ---------------------> 
+                            <div class="feed-img">
+                                <img src="./assets/image/f7.jpg" alt="">
+                            </div>
+                            <!-------------------- Feed Action Area ---------------------> 
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa fa-heart"></i></span>
+                                    <span><i class="fa fa-comment-dots"></i></span>
+                                    <span><i class="fa fa-link"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <i class="fa fa-bookmark"></i>
+                                </div>
+                            </div>
+
+                            <!-------------------- LIked By ---------------------> 
+                            <div class="liked-by">
+                                <span><img src="./assets/image/p4.jpg" alt=""></span>
+                                <span><img src="./assets/image/p5.jpg" alt=""></span>
+                                <span><img src="./assets/image/p6.jpg" alt=""></span>
+                                <p>Liked by<b>David Mark</b> and <b>77 others comments</b> </p>
+                            </div>
+                            
+                            <!-------------------- Caption ---------------------> 
+                            <div class="caption">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem odit sint vitae ullam.
+                                </div>
+                                <p><b>Jia Glisa </b>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                <span class="harsh-tag">#lifestyle</p>
+                            </div>
+
+                            <!-------------------- Comments ---------------------> 
+                            <div class="comments text-gray">
+                                View all comments
+                            </div>
+                     </div>
+                     <div class="feed">
+                            <!-------------------- Feed Top ---------------------> 
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="./assets/image/p3.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Brian Foster</h3>
+                                        <div class="time text-gray">
+                                            <small>WASHINGTON DC, <span>3 DAYS AGO</span></small> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class='bx bx-dots-horizontal-rounded'></i>
+                                </span>
+                            </div>
+                            <!-------------------- Feed img ---------------------> 
+                            <div class="feed-img">
+                                <img src="./assets/image/f8.jpg" alt="">
+                            </div>
+                            <!-------------------- Feed Action Area ---------------------> 
+                            <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa fa-heart"></i></span>
+                                    <span><i class="fa fa-comment-dots"></i></span>
+                                    <span><i class="fa fa-link"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <i class="fa fa-bookmark"></i>
+                                </div>
+                            </div>
+
+                            <!-------------------- LIked By ---------------------> 
+                            <div class="liked-by">
+                                <span><img src="./assets/image/p4.jpg" alt=""></span>
+                                <span><img src="./assets/image/p5.jpg" alt=""></span>
+                                <span><img src="./assets/image/p6.jpg" alt=""></span>
+                                <p>Liked by<b>Maria Bron</b> and <b>77 others comments</b> </p>
+                            </div>
+                            
+                            <!-------------------- Caption ---------------------> 
+                            <div class="caption">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem odit sint vitae ullam.
+                                </div>
+                                <p><b>Luna White</b>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                <span class="harsh-tag">#lifestyle</p>
+                            </div>
+
+                            <!-------------------- Comments ---------------------> 
+                            <div class="comments text-gray">
+                                View all comments
+                            </div>
+                     </div>     
+                </div>
+              </div>  
+            </div>
+
+            <!-------------------- Main Right --------------------->
+            <div class="main-right">
+                <div class="messages">
+                    <!-------------------- Message Top --------------------->
+                    <div class="message-top">
+                        <h4>Message</h4><i class="fa fa-edit"></i>
+                    </div>
+                    <!-------------------- Search Bar --------------------->
+                    <div class="message-search-bar">
+                        <i class="fa fa-search"></i>
+                        <input type="search" placeholder="Search Message" id="message-search">
+                    </div>
+                    <!-------------------- Message Categories --------------------->
+                    <div class="message-categories">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-request">Request(2)</h6>
+                    </div>
+                    <!-------------------- Message --------------------->
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./assets/image/p1.jpg" alt="">
+                            <div class="green-active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Jenny Emma</h5>
+                            <p class="text-gray">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./assets/image/p8.jpg" alt="">
+                            <div class="green-active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Scott Rymond</h5>
+                            <p class="text-gray">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./assets/image/p6.jpg" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Pheobe Evans</h5>
+                            <p class="text-gray">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./assets/image/p5.jpg" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Emaliy Elfiey</h5>
+                            <p class="text-gray">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="./assets/image/p3.jpg" alt="">
+                        </div>
+                        <div class="message-body">
+                            <h5>Brian Foster</h5>
+                            <p class="text-gray">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--------------------  Friend Request --------------------->
+                <div class="friend-request">
+                    <h4>Request</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="./assets/image/r1.jpg" alt="">
+                            </div>
+                            <div class="info-content">
+                                <h5>Mark Danele</h5>
+                                <p class="text-gray">
+                                    4 Mutual Friends
+                                </p>
+                                <small class="text-gray alert">You have accepted friend request</small>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary" id="accept">
+                                Accept
+                            </button>
+                            <button class="btn btn-danger" id="delete">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="./assets/image/r2.jpg" alt="">
+                            </div>
+                            <div class="info-content">
+                                <h5>Hija Binta</h5>
+                                <p class="text-gray">
+                                    4 Mutual Friends
+                                </p>
+                                <small class="text-gray alert">You have accepted friend request</small>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary" id="accept">
+                                Accept
+                            </button>
+                            <button class="btn btn-danger" id="delete">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-picture">
+                                <img src="./assets/image/r3.jpg" alt="">
+                            </div>
+                            <div class="info-content">
+                                <h5>Even Loise</h5>
+                                <p class="text-gray">
+                                    4 Mutual Friends
+                                </p>
+                                <small class="text-gray alert">You have accepted friend request</small>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary" id="accept">
+                                Accept
+                            </button>
+                            <button class="btn btn-danger" id="delete">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-------------------- PopUps --------------------->
+    <!-------------------- Profie PopUps --------------------->
+    <div class="popup profile-popup">
+        <div class="popup-container">
+            <div class="popup-box profile-popup-box">
+                <h1>Beg Joker</h1>
+                <p>@thebegjoker</p>
+                <div class="popup-img" id="my-profile-picture">
+                    <img src="./assets/image/profile.png" alt="">
+                </div>
+                <label for="profile-upload" class="btn btn-primary btn-lg">Update Profile Picture</label>
+                <input type="file" accept="image/jpg, image/png, image/jpeg" id="profile-upload">
+                <button class="btn btn-primary btn-lg">Log Out</button>
+            </div>
+            <span class="close"><i class="fa fa-close"></i></span>
+        </div>        
+    </div>
+
+    <!-------------------- Add PopUps --------------------->
+    <div class="popup add-post-popup">
+        <div class="popup-container">
+            <form class="popup-box add-post-popup">
+                <h1>Add New Post</h1>
+                <div class="row post-title">
+                    <label>Title</label>
+                    <input type="text" placeholder="What's on your mind ?" id="add-post">
+                </div>
+                <div class="row post-img">
+                    <img src="./assets/image/profile.png" alt="">
+                    <label for="feed-pic-upload" class="feed-upload-button">
+                        <span><i class="fa fa-add"></i></span>
+                        Upload A Picture
+                    </label>
+                    <input type="file" accept="image/jpg, image/png, image/jpeg" id="feed-pic-upload">
+                    <input type="submit" class="btn btn-primary btn-lg" value="Add Post">
+                </div>
+            </form>
+            <span class="close"><i class="fa fa-close"></i></span>
+        </div>
+    </div>
+
+    <!-------------------- Theme Customize Poppup --------------------->
+    <div class="popup theme-customize">
+        <div class="popup-container">
+            <div class="popup-box theme-customize-popup-box">
+                <h1>Customize Your Theme</h1>
+                <p>Manage Your Font Size, Color, And Background</p>
+                
+                <!-------------------- Font Size --------------------->
+                <div class="font-size">
+                    <h4>Font Size</h4>
+                    <div>
+                        <div>
+                            <h6>Aa</h6>
+                        </div>
+                        <div class="choose-size">
+                            <span class="font-size-1"></span>
+                            <span class="font-size-2"></span>
+                            <span class="font-size-3"></span>
+                            <span class="font-size-4"></span>
+                            <span class="font-size-5"></span>
+                        </div>
+                        <div>
+                            <h3>Aa</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-------------------- Primary Colors --------------------->
+                <div class="colors">
+                    <h4>Color</h4>
+                    <div class="choose-color">
+                        <span class="color-1"></span>
+                        <span class="color-2"></span>
+                        <span class="color-3"></span>
+                        <span class="color-4"></span>
+                        <span class="color-5"></span>
+                    </div>
+                </div>
+                <!-------------------- Background Colors --------------------->
+                <div class="background">
+                    <h4>Background</h4>
+                    <div class="choose-bg">
+                        <div class="bg1 active">
+                            <span></span>
+                            <h5>Light</h5>
+                        </div>
+                        <div class="bg2">
+                            <span></span>
+                            <h5>Dark</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="close"><i class="fa fa-close"></i></span>
+        </div>
+    </div>
+
+    
+    <!-------------------- Swiper Js Link --------------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-------------------- Custom Js Link --------------------->
+    <script src="./js/script.js"></script>
+</body>
+</html>

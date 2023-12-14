@@ -1,0 +1,160 @@
+ /******************** Menu Left *******************/
+.main-left {
+    flex-basis: 18vw;
+    position: sticky;
+    width: fit-content;
+    height: max-content;
+    top: 5.6rem;
+    left: 0;
+    transition: all 1s;
+    
+    @include maxWidth {
+        width: 5rem;
+        position: fixed;
+        z-index: 9;
+        top: 10%;
+    }
+    @include medWidth {
+        position: fixed;
+    }
+    
+    .profile {
+        background: $color-white;
+        padding: $card-padding;
+        border-radius: $card-border-radius;
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+
+        @include maxWidth {
+            display: none;
+        }
+    }
+    aside {
+        margin-top: 1rem;
+        border-radius: $card-border-radius;
+
+        .btn {
+            @include maxWidth {
+                display: none;
+            }
+        }
+
+        .menu-item {
+            @extend %d-flex-ai;
+            height: 4rem;
+            position: relative;
+            cursor: pointer;
+            transition: 300ms ease all;
+            background: $color-white;
+            color: $color-dark;
+
+            &:hover {
+                background: $color-light;
+            }
+
+            span {
+                img {
+                    width: 1.8rem;
+                    margin-left: 2rem;
+                    position: relative;
+
+                    @include maxWidth {
+                        margin-left: 1.5rem;
+                    }
+                    @include smaWidth {
+                        width: 1.4rem;
+                    }
+
+                }
+            }
+
+            .notify-counter {
+                background: $color-danger;
+                color: $color-white;
+                width: fit-content;
+                font-size: .7rem;
+                border-radius: 30%;
+                padding: .1rem .4rem;
+                position: absolute;
+                top: .7rem;
+                left: 3.2rem;
+            }
+            h3 {
+                margin-left: $base-margin * 1.5;
+                font-size: $nml-font-size;
+
+                @include maxWidth {
+                    display: none;
+                }
+            }
+            &.active {
+                background: $color-light;
+
+                h3 {
+                    color: var(--color-primary);
+                    
+                }
+                &::before {
+                    content: '';
+                    display: block;
+                    width: .5rem;
+                    height: 100%;
+                    background: var(--color-primary);
+                }
+            }
+            &:nth-child(1) {
+                overflow: hidden;
+                border-top-left-radius: $card-border-radius;
+                border-top-right-radius: $card-border-radius;
+            }
+            &:nth-last-child(2){
+                overflow: hidden;
+                border-bottom-left-radius: $card-border-radius;
+                border-bottom-right-radius: $card-border-radius;
+            }
+            /******************** Notification Box *******************/
+            .notification-box {
+                width: 25rem;
+                left: 105%;
+                top: 0;
+                position: absolute;
+                background: $color-white;
+                border-radius: $card-border-radius;
+                padding: $card-padding;
+                box-shadow: var(--color-primary) 0 0 1rem;
+                z-index: 8;
+                display: none;
+
+                @include smaWidth {
+                    width: 18rem;
+                }
+
+                &::before {
+                    content: '';
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    background: $color-white;
+                    position: absolute;
+                    left: -.6rem;
+                    transform: rotate(45deg);
+                }
+                > div {
+                    display: flex;
+                    gap: 1rem;
+                    align-items: flex-start;
+                    margin-bottom: $base-margin;
+
+                    .profile-picture {
+                        width: 2.6rem;
+                    }
+
+                    small {
+                        display: block;
+                    }
+                }
+            }
+            
+        }
+    }
+}
